@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0F6E4E3-E2B6-45AD-BB6B-28ED723E1C8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projectPractice1</RootNamespace>
+    <AssemblyName>projectPractice1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLogPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogPage.Designer.cs">
+      <DependentUpon>AdminLogPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOption.Designer.cs">
+      <DependentUpon>AdminOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerReload.Designer.cs">
+      <DependentUpon>CustomerReload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReloadHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerReloadHistory.Designer.cs">
+      <DependentUpon>CustomerReloadHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSetting.Designer.cs">
+      <DependentUpon>MenuSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectType.Designer.cs">
+      <DependentUpon>SelectType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimActivationHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimActivationHistory.Designer.cs">
+      <DependentUpon>SimActivationHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimActivationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimActivationPage.Designer.cs">
+      <DependentUpon>SimActivationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraderLogPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraderLogPage.Designer.cs">
+      <DependentUpon>TraderLogPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraderOptionPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraderOptionPage.Designer.cs">
+      <DependentUpon>TraderOptionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraderRegLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraderRegLog.Designer.cs">
+      <DependentUpon>TraderRegLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraderRegPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraderRegPage.Designer.cs">
+      <DependentUpon>TraderRegPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TradersDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TradersDetails.Designer.cs">
+      <DependentUpon>TradersDetails.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminLogPage.resx">
+      <DependentUpon>AdminLogPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOption.resx">
+      <DependentUpon>AdminOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReload.resx">
+      <DependentUpon>CustomerReload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReloadHistory.resx">
+      <DependentUpon>CustomerReloadHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSetting.resx">
+      <DependentUpon>MenuSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SelectType.resx">
+      <DependentUpon>SelectType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimActivationHistory.resx">
+      <DependentUpon>SimActivationHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimActivationPage.resx">
+      <DependentUpon>SimActivationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraderLogPage.resx">
+      <DependentUpon>TraderLogPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraderOptionPage.resx">
+      <DependentUpon>TraderOptionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraderRegLog.resx">
+      <DependentUpon>TraderRegLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraderRegPage.resx">
+      <DependentUpon>TraderRegPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TradersDetails.resx">
+      <DependentUpon>TradersDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\043489e7922dabf9902965b964ca04a5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountains-the-game-lake-forest-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_410641572_pG4NX6I9DZfiGszulXLnUg7TeR2wj7VO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\043489e7922dabf9902965b964ca04a51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20220629_133423.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\808942_30cd6b474ac84d10ab1db6ed620b7368_mv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountains-the-game-lake-forest-wallpaper-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-48 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-fluency-businessman-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-fluency-three-men.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-fluency-man-and-woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-fluency-gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-purple-blue-background-vector-graphic-3565.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%294.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountains-the-game-lake-forest-wallpaper-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-to-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Google_Mobile_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-history-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reload-67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reload-58.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
