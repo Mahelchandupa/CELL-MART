@@ -17,4 +17,22 @@ CELL MART Reload Application is a demonstration of a reload management system fo
       <li>Shop owners can send reloads to their customers using their available reload balance.</li>
     </ul>
   </li>
+  <li>
+    <b>Reload Packages:</b>   
+    <ul>
+      <li>Users can select from predefined reload packages.</li>
+    </ul>
+  </li>
+  <li>
+    <b>SIM Activation:</b>
+    <ul>
+      <li>Users can activate SIM cards through the application.</li>
+    </ul>
+  </li>
+  <li>
+    <b>Database Storage:</b>
+    <u>
+      <li>All data, including user information, reload requests, and transactions, are stored in the database.</li>
+    </u>
+  </li>
 </ul>
