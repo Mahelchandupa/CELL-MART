@@ -31,8 +31,8 @@ CELL MART Reload Application is a demonstration of a reload management system fo
   </li>
   <li>
     <b>Database Storage:</b>
-    <u>
+    <ul>
       <li>All data, including user information, reload requests, and transactions, are stored in the database.</li>
-    </u>
+    </ul>
   </li>
 </ul>
